@@ -1,0 +1,4 @@
+~box()
+	{
+		delete breadth;
+	}
