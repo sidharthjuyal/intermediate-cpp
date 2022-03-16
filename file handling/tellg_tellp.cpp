@@ -1,6 +1,6 @@
-#include<iostream>
-#include<fstream>
-using namespace  std;
+#include <iostream>
+#include <fstream>
+using namespace std;
 
 int main()
 {
@@ -8,26 +8,27 @@ int main()
     fin.open("tellg_tellp.txt");
     int pos;
     char ch;
-    fin>>ch;
-    pos=fin.tellg();
-    cout<<pos;
-    
-    fin>>ch;
-    pos=fin.tellg();
-    cout<<pos;
+    fin >> ch;
+    pos = fin.tellg();
+    cout << pos;
 
-    fin>>ch;
-    pos=fin.tellg();
-    cout<<pos;
+    fin >> ch;
+    pos = fin.tellg();
+    cout << pos;
+
+    fin >> ch;
+    pos = fin.tellg();
+    cout << pos;
     fin.close();
 
     ofstream fout;
-    fout.open("tellg_tellp.txt",ios::app);
-    pos=fout.tellp();
-    cout<<endl<<pos;
-    fout<<" Siddhuu";
-    pos=fout.tellp();
-    cout<<pos;
+    fout.open("tellg_tellp.txt", ios::app);
+    pos = fout.tellp();
+    cout << endl
+         << pos;
+    fout << " Siddhuu";
+    pos = fout.tellp();
+    cout << pos;
     fout.close();
 }
 

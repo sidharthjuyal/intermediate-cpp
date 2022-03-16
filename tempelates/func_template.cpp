@@ -1,21 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-template <class X, class Y> auto big(X a,Y b)
+template <class X, class Y>
+auto big(X a, Y b)
 {
-   return (a>b)?a:b;  
+   return (a > b) ? a : b;
 }
-//X and Y are placeholders for datatypes
-template < class X> X small(X a, X b)
+// X and Y are placeholders for datatypes
+template <class X>
+X small(X a, X b)
 {
-     return(a>b)?b:a;
+   return (a > b) ? b : a;
 }
 
 int main()
 {
-   cout<<big(6,5);
-   cout<<big(4,5.4);
-   cout<<small(2,1);
+   cout << big(6, 5);
+   cout << big(4, 5.4);
+   cout << small(2, 1);
 }
 
 /*

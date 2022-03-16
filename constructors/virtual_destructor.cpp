@@ -1,43 +1,45 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class A{
-   int *a;
-   public:
-   A()
-   {
-       a=new int;
-   }
-   virtual ~A()
-   {
-       delete a;
-   }
+class A
+{
+    int *a;
 
-   void f1()
-   {
+public:
+    A()
+    {
+        a = new int;
+    }
+    virtual ~A()
+    {
+        delete a;
+    }
 
-   }
+    void f1()
+    {
+    }
 };
 
-class B:public A
+class B : public A
 {
-   int *b;
-   public:
-   B()
-   {
-       b=new int;
-   }
-   ~B()
-   {
-       delete b;
-   }
+    int *b;
+
+public:
+    B()
+    {
+        b = new int;
+    }
+    ~B()
+    {
+        delete b;
+    }
 };
 
 int main()
 {
-   A *p = new B;
-   p->f1();
-   delete p;
+    A *p = new B;
+    p->f1();
+    delete p;
 }
 
 /*

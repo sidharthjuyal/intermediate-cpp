@@ -1,29 +1,31 @@
-#include<iostream>
+#include <iostream>
 
-namespace Myspace{
-    int a=10,b=10;
+namespace Myspace
+{
+    int a = 10, b = 10;
     void f1()
     {
-        std::cout<<a<<" "<<b<<std::endl;
+        std::cout << a << " " << b << std::endl;
     }
 }
 
-namespace Myspace{  //this doesnt means redefinition or overriding, it simply means that we are adding on to the code.
-    int x=11, y=11;
+namespace Myspace
+{ // this doesnt means redefinition or overriding, it simply means that we are adding on to the code.
+    int x = 11, y = 11;
 
-    //int a=89;  
-    //this will give error as you cannot override the already existing data from the previously same named namespace
-    
+    // int a=89;
+    // this will give error as you cannot override the already existing data from the previously same named namespace
+
     void f2()
     {
-        std::cout<<x<<" "<<y<<std::endl;
+        std::cout << x << " " << y << std::endl;
     }
 }
 
 int main()
 {
-     Myspace::f1();
-     Myspace::f2();
+    Myspace::f1();
+    Myspace::f2();
 }
 
 /*

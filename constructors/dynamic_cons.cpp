@@ -1,22 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class complex{
-    int a,b;
+class complex
+{
+    int a, b;
     int *p;
-    public:
-    complex(int x=0,int y=0, int z=0)
+
+public:
+    complex(int x = 0, int y = 0, int z = 0)
     {
-       a=x;
-       b=y;
-       p=new int;
-       *p=z; 
+        a = x;
+        b = y;
+        p = new int;
+        *p = z;
     }
 };
 
 int main()
 {
-    complex c1,c2,c3(3,4,5);
+    complex c1, c2, c3(3, 4, 5);
     return 0;
 }
 

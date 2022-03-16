@@ -1,30 +1,29 @@
-#include<iostream>
-#include<fstream>
+#include <iostream>
+#include <fstream>
 using namespace std;
 
 int main()
 {
-ifstream fin;
-string str;
-fin.open("file.txt");
-char ch;
+    ifstream fin;
+    string str;
+    fin.open("file.txt");
+    char ch;
 
-while(!fin.eof())
-{   
-     fin>>str;
-     cout<<str<<" ";
-    // ch=fin.get();
-    // cout<<ch;
-}
+    while (!fin.eof())
+    {
+        fin >> str;
+        cout << str << " ";
+        // ch=fin.get();
+        // cout<<ch;
+    }
 
-fin.close();
-
+    fin.close();
 }
 
 /*
 NOTES
 
-Header files available in C++ for Input/Output operations are: 
+Header files available in C++ for Input/Output operations are:
 
 -> iostream: iostream stands for standard input-output stream. This header file contains definitions of objects like cin, cout, cerr, etc.
 -> iomanip: iomanip stands for input-output manipulators. The methods declared in these files are used for manipulating streams. This file contains definitions of setw, setprecision, etc.

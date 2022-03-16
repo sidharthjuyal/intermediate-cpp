@@ -1,20 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-   cout<<"Welcome";
-   try{
-       throw 1;
-       cout<<"In try";  //agar throw chal gaya to ye line nahi chlegi, if throw works then all the other lines in try block after throw are not executed.
-   } 
-   catch(int e)
-   {
-       cout<<"\nException number: "<<e;
-   }
-   cout<<"\nLast line.";
+    cout << "Welcome";
+    try
+    {
+        throw 1;
+        cout << "In try"; // agar throw chal gaya to ye line nahi chlegi, if throw works then all the other lines in try block after throw are not executed.
+    }
+    catch (int e)
+    {
+        cout << "\nException number: " << e;
+    }
+    cout << "\nLast line.";
 
-   return 0;
+    return 0;
 }
 
 /*
@@ -40,11 +41,11 @@ catch(type1 arg){
 
 }
 catch(type2 arg){
-    
+
 }
 ...
 catch(typeN arg){
-    
+
 }
 
 -> try ke sath catch zroori hai, catch ke sath try zroori hai.

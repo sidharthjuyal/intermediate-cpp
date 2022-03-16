@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-//use of initializer list
+// use of initializer list
 class point
 {
     int x, y;
 
 public:
-    point(int a = 0, int b = 0) : x(a), y(b)//one use
+    point(int a = 0, int b = 0) : x(a), y(b) // one use
     {
         /* above can also be written as:
 
@@ -22,9 +22,9 @@ public:
     {
         return x;
     };
-    int getY() 
-    { 
-        return y; 
+    int getY()
+    {
+        return y;
     };
 };
 

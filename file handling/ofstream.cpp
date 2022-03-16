@@ -1,18 +1,18 @@
-#include<fstream>//contains declaration of fstream, ifstream, ofstream
-#include<iostream>
+#include <fstream> //contains declaration of fstream, ifstream, ofstream
+#include <iostream>
 using namespace std;
 
 int main()
 {
-   ofstream fout;  //object of ofstream (you made a real life output stream)
-   //file me writing krnin hai
-   fout.open("file.txt",ios::app);  //open function is a method of ofstream class and object fout is calling it.
-   /* 
-   -> agr file exist krti hai to open ho jaegi, vrna new file create hogi or tab open hogi.
-   -> agr open method me, only file name likhte ho to is file ko, jaha pe aka program hai vaha ki directory me dhunda jaega.
-   */
-   fout<<"\nHello there Iam sidharth!";
-   fout.close();  //close() method of ofstream class 
+      ofstream fout; // object of ofstream (you made a real life output stream)
+      // file me writing krnin hai
+      fout.open("file.txt", ios::app); // open function is a method of ofstream class and object fout is calling it.
+      /*
+      -> agr file exist krti hai to open ho jaegi, vrna new file create hogi or tab open hogi.
+      -> agr open method me, only file name likhte ho to is file ko, jaha pe aka program hai vaha ki directory me dhunda jaega.
+      */
+      fout << "\nHello there Iam sidharth!";
+      fout.close(); // close() method of ofstream class
 }
 
 /*
@@ -25,7 +25,7 @@ STREAMS
 
 FLOWCHART:
                    ----->istream_withassign(cin)
-            (>>)   |        
+            (>>)   |
       ---->istream------>ifstream
       |            |
 ios----            |-->iostream--->fstream
